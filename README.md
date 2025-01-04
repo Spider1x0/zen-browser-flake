@@ -5,7 +5,11 @@ This is a flake for the Zen browser. Originally forked from
 but heavily modified. Automatically updates daily.
 
 Also actively maintained, unlike the upstream.
-
+```md
+#Spider0x1
+This flake was forked from youwen5 and it's intended to be used as a study case on
+how to code with nix, so i wont be doing any major changes :)
+```
 I have disabled the annoying update checks by default, as well as Zen trying to
 set itself as the default browser, through `policies.json`. The browser cannot
 update itself when installed with Nix anyways, so these are entirely useless.
@@ -19,7 +23,7 @@ To use, add it to the relevant NixOS configuration flake inputs:
 ```nix
 inputs = {
   # ...
-  zen-browser.url = "github:youwen5/zen-browser-flake";
+  zen-browser.url = "github:spider1x0/zen-browser-flake";
 
   # optional, but recommended so it shares system libraries, and improves startup time
   zen-browser.inputs.nixpkgs.follows = "nixpkgs";
